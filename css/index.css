@@ -1,0 +1,152 @@
+body {
+  font: 16px "Noto Sans", "Noto Sans CJK", "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
+  /* font-family: "Raleway", Verdana, sans-serif, 宋体, serif, "Droid Serif", "Helvetica Neue", Helvetica, Arial; */
+  text-shadow: 4px 4px 4px #333;
+  position: relative;
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0;
+}
+
+hr {
+  height: 0.3em;
+  border: none;
+  margin: 2em 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background: repeating-linear-gradient(
+    -45deg, #ccc, #ccc 0.25em,
+    transparent 0.25em, transparent 0.5em
+  );
+}
+
+h1 {
+  font-size: 2.2em;
+  margin: 50px 0;
+  text-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+}
+
+a {
+  position: relative;
+  color: #111;
+  text-decoration: none;
+  /* border-bottom: 0.05em dotted #666; */
+  transition: 0.5s ease-in-out;
+}
+
+a:hover {
+  color: #aaa;
+  /* border-bottom: 0.05em solid #aaa; */
+  text-decoration: none;
+}
+
+a:active {
+  top: 0.1em;
+}
+
+a.portal-link {
+  font-size: 1.75em;
+  border-bottom: none;
+}
+
+a.portal-link:hover {
+  border-bottom: none;
+}
+
+ul {
+  display: block;
+  padding: 0;
+}
+
+div.background {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+div.main {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.panel-main__inner {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 800;
+  padding: 10px 10%;
+}
+
+.panel-inverted {
+  text-align: center;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 40%);
+}
+
+.navigation {
+
+}
+
+.cover-navigation {
+  display: block;
+  position: relative;
+  float: left;
+  clear: left;
+  width: 100%;
+  margin-bottom: .4em;
+  padding-top: 5px;
+}
+
+.navigation__item a {
+  display: block;
+  margin: 0px 5px;
+  padding: 10px 20px;
+  border: 1px solid #111;
+  border-radius: 20px;
+  font-size: .9em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: none;
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  opacity: .9;
+}
+
+.navigation__item {
+  display: inline-block;
+  margin: 3px 3px;
+  line-height: 1em;
+}
+
+.navigation__item a:hover {
+  color: #888;
+  border-color: #888;
+  opacity: 1;
+}
+
+@media all and (max-width: 640px) {
+  .navigation li {
+    float: left;
+    position: relative;
+    margin: 3px 10%;
+    list-style-type: none;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  h1 {
+    font-size: 1.8em;
+  }
+}

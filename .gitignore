@@ -1,0 +1,7 @@
+# Ignore old/temp files
+*old.css
+*old.html
+*.tmp
+*.old
+
+# Custom files
