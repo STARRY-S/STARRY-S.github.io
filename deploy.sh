@@ -2,5 +2,5 @@
 git add .
 git commit
 
-git push origin master
-git push gitlab master
+git push origin main
+git push gitlab main
