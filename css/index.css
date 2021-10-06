@@ -129,6 +129,7 @@ div.main {
   -webkit-font-smoothing: antialiased;
   position: relative;
   opacity: .9;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .navigation__item {

@@ -18,6 +18,8 @@
     <link rel="manifest" href="/favicons/site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124615792-2"></script>
@@ -36,6 +38,7 @@
       <div class="main">
         <div class="panel-cover--overlay"></div>
           <div class="panel-main__inner panel-inverted">
+            <div id="aplayer"></div>
             <h1>STARRY-S' Homepage</h1>
             <hr>
             <strong>Morning.</strong>
@@ -55,9 +58,29 @@
                 </ul>
               </nav>
             </div>
+
+            <script>
+            const ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                fixed: true,
+                audio: [{
+                  name: 'sand dream',
+                  artist: 'Yuki Kajura',
+                  theme: '#857f58',
+                  url: 'https://music.starry-s.moe/music/41d7_92fe_3e2f_49b31565f5b2dc00df4d8fb14b1bc59f.mp3',
+                  cover: 'https://music.starry-s.moe/music/cover/gfp7e39qcxSOYuoTx9zbaA==_716881581332123.jpg'
+                }, {
+                    name: 'Realms',
+                    artist: 'Hinkik / A Himitsu',
+                    theme: '#4a7cd2',
+                    url: 'https://music.starry-s.moe/music/0553_060c_0352_298bf68cd11f8d32a4e048799d413b25.m4a',
+                    cover: 'https://music.starry-s.moe/music/cover/18577348464681568.jpg'
+                }]
+            });
+            </script>
           </div>
       </div>
-      <!-- <script src="/js/evanyou-canvas.js"></script> -->
+      <script src="/js/evanyou-canvas.js"></script>
     </div>
   </body>
 </html>
