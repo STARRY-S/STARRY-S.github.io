@@ -1,4 +1,6 @@
 STARRY-S' Homepage
 ====
 
-Visit: <https://starrry-s.moe>
+Visit: <https://starry-s.moe>
+
+Inspired by: <https://github.com/AlynxZhou/hikaru-theme-aria/>
