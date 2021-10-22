@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="theme-color" content="#33363b">
-    <meta name="msapplication-TileColor" content="#33363b">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="theme-color" content="#0e0e0e">
+    <meta name="msapplication-TileColor" content="#0e0e0e">
     <meta name="keywords" content="Life, STARRY-S, HomePage">
     <meta name="author" content="STARRY-S">
 
@@ -14,14 +15,13 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#0e0e0e">
     <link rel="manifest" href="/favicons/site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
     <link rel="stylesheet" type="text/css" href="/css/index.css">
 
     <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.min.js"></script>
     <script async src="/js/ga-lite.js"></script>
     <title>STARRY-S' Homepage</title>
@@ -29,59 +29,67 @@
 
   <body>
     <header>
+      <span class="label label_top_right">
+        <i class="fas fa-heart"></i>
+      </span>
     </header>
     <div class="background">
       <div class="main">
-        <div class="panel-cover--overlay"></div>
-          <div class="panel-main__inner panel-inverted">
-            <h1>STARRY-S' Homepage</h1>
-            <hr>
-            <strong>Morning.</strong>
-            <hr>
-            <div>
-              <nav class="cover-navigation">
-                <ul class="navigation">
-                  <li class="navigation__item">
-                    <a href="https://blog.starry-s.moe/"><i class="fas fa-link"></i> Blog</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a href="https://github.com/STARRY-S/"><i class="fab fa-github"></i> GitHub</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a href="https://space.bilibili.com/19189337"><i class="fas fa-globe"></i> Bilibili</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+        <h1>STARRY-S' Homepage</h1>
+        <hr>
+        <strong>Morning.</strong>
+        <hr>
+        <div>
+          <nav class="cover-navigation">
+            <ul class="navigation">
+              <li class="navigation-item">
+                <a href="https://blog.starry-s.moe/"><i class="fas fa-link"></i> Blog</a>
+              </li>
+              <li class="navigation-item">
+                <a href="https://github.com/STARRY-S/"><i class="fab fa-github"></i> GitHub</a>
+              </li>
+              <li class="navigation-item">
+                <a href="https://space.bilibili.com/19189337"><i class="fas fa-globe"></i> Bilibili</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-            <div id="aplayer" class="aplayer aplayer-withlist aplayer-arrow aplayer-fixed"></div>
-            <script>
-            const ap = new APlayer({
-                container: document.getElementById('aplayer'),
-                fixed: true,
-                audio: [{
-                  name: 'sand dream',
-                  artist: 'Yuki Kajura',
-                  theme: '#857f58',
-                  url: 'https://music.starry-s.moe/music/41d7_92fe_3e2f_49b31565f5b2dc00df4d8fb14b1bc59f.mp3',
-                  cover: 'https://music.starry-s.moe/music/cover/gfp7e39qcxSOYuoTx9zbaA==_716881581332123.jpg'
-                }, {
-                    name: 'Realms',
-                    artist: 'Hinkik / A Himitsu',
-                    theme: '#4a7cd2',
-                    url: 'https://music.starry-s.moe/music/0553_060c_0352_298bf68cd11f8d32a4e048799d413b25.m4a',
-                    cover: 'https://music.starry-s.moe/music/cover/18577348464681568.jpg'
-                }]
-            });
-
-            const apMiniSwitcher = $('.aplayer-miniswitcher');
-            $(document).ready(function() {
-              apMiniSwitcher.click();
-            });
-            </script>
-          </div>
+        <div class="musicbox">
+          <div id="aplayer"></div>
+        </div>
+        <script>
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            // fixed: true,
+            audio: [{
+              name: 'sand dream',
+              artist: 'Yuki Kajura',
+              theme: '#857f58',
+              url: 'https://music.starry-s.moe/music/41d7_92fe_3e2f_49b31565f5b2dc00df4d8fb14b1bc59f.mp3',
+              cover: 'https://music.starry-s.moe/music/cover/gfp7e39qcxSOYuoTx9zbaA==_716881581332123.jpg'
+            }, {
+                name: 'Gloria',
+                artist: 'Kalafina',
+                theme: '#2f501b',
+                url: 'https://music.starry-s.moe/music/obj_w5rDlsOJwrLDjj7CmsOj_8942498360_1879_0685_c1e4_dc081eef64f48a5c536b7e14de40afbe.m4a',
+                cover: 'https://music.starry-s.moe/music/cover/109951166199995897.jpg'
+            }, {
+              name: 'Jr.',
+              artsist: 'Yuki Kajura',
+              theme: '#236b8f',
+              url: 'https://music.starry-s.moe/music/obj_w5rDlsOJwrLDjj7CmsOj_9105446245_10b9_926d_e1bd_031289ec9879d22d1c98d397a04d0e0b.m4a',
+              cover: 'https://music.starry-s.moe/music/cover/109951166004086774.jpg'
+            }]
+        });
+        </script>
       </div>
-      <script src="/js/evanyou-canvas.js"></script>
     </div>
+    <footer>
+      <div class="label">
+        <p>Hosted by <a href="https://pages.github.com">GitHub Pages</a></p>
+      </div>
+    </footer>
+    <script src="/js/evanyou-canvas.js"></script>
   </body>
 </html>

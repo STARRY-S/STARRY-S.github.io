@@ -3,8 +3,8 @@
 function evanyouCanvas() {
   const canvas = document.createElement('canvas')
   canvas.className = 'evanyou-canvas'
-  const updateCanvas = drawCanvas(canvas)
-  document.addEventListener('click', updateCanvas)
+  let updateCanvas = drawCanvas(canvas)
+  document.addEventListener('click', updateCanvas);
   return {
     canvas,
     updateCanvas,
@@ -13,10 +13,11 @@ function evanyouCanvas() {
 }
 
 function drawCanvas(c) {
+  const win = window;
   let x = c.getContext('2d'),
-    pr = window.devicePixelRatio || 1,
-    w = window.innerWidth,
-    h = window.innerHeight - 20,
+    pr = win.devicePixelRatio || 1,
+    w = win.innerWidth,
+    h = win.innerHeight,
     f = 90,
     q,
     m = Math,
@@ -26,6 +27,10 @@ function drawCanvas(c) {
     z = m.random
   c.width = w * pr
   c.height = h * pr
+  if (win.navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/i)) {
+    c.style.height = h + "px";
+    c.style.width = w + "px";
+  }
   x.scale(pr, pr)
   x.globalAlpha = 0.6
 
@@ -69,5 +74,13 @@ function drawCanvas(c) {
 }
 
 const { canvas, updateCanvas, offClick } = evanyouCanvas()
+function resizeCanvas() {
+    canvas.style.width = window.innerWidth + "px";
+    canvas.style.height = window.innerHeight + "px";
+}
+window.addEventListener('resize', resizeCanvas);
+
 // Add to your container
+// const background = document.getElementsByClassName("background")[0];
+// background.appendChild(canvas)
 document.body.appendChild(canvas)
