@@ -20,6 +20,7 @@ a {
 
 a:hover {
     color: #aaa;
+    border-bottom: 0.05em dotted #aaa;
 }
 
 div.background-box {

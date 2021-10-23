@@ -27,10 +27,8 @@ function drawCanvas(c) {
     z = m.random
   c.width = w * pr
   c.height = h * pr
-  if (win.navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/i)) {
-    c.style.height = h + "px";
-    c.style.width = w + "px";
-  }
+  c.style.height = h + "px";
+  c.style.width = w + "px";
   x.scale(pr, pr)
   x.globalAlpha = 0.6
 
@@ -81,6 +79,4 @@ function resizeCanvas() {
 window.addEventListener('resize', resizeCanvas);
 
 // Add to your container
-// const background = document.getElementsByClassName("background")[0];
-// background.appendChild(canvas)
 document.body.appendChild(canvas)
