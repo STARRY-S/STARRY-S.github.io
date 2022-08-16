@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/starrys
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://starry-s.moe
+  * I am starrys (https://keybase.io/starrys) on keybase.
+  * I have a public key with fingerprint E8F9 2E5A C1AE 0B0F 4421  4012 9190 2000 F0C2 9BC2
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101d714d2adc1ad93bae9f125da8f9ca41a92d48ebdd253dcbefe69a32ee882b58e0a",
+      "fingerprint": "e8f92e5ac1ae0b0f4421401291902000f0c29bc2",
+      "host": "keybase.io",
+      "key_id": "91902000f0c29bc2",
+      "kid": "0101d714d2adc1ad93bae9f125da8f9ca41a92d48ebdd253dcbefe69a32ee882b58e0a",
+      "uid": "cc3ac22de87b334663144fd47ee20419",
+      "username": "starrys"
+    },
+    "service": {
+      "hostname": "starry-s.moe",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1660665745,
+  "expire_in": 157680000,
+  "prev": "c1f6ba23a872302b1414c92b0c524913a0bd08a54ade88a87ddf2b45c982a650",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkn9QFGUYx4/jh0gSRGGAQbkUQ8qP3Xf39navqJxDxQhLKugH4/nu7nuweNxd
+ewcXEDdYo0aCEg5iAWd24IQwmFw/EM1IJ004BjQJYyTTwToSMgVixJxpl8k/munP
+/nrnfd7P9/s+32ee2lB/VbDf/Bb9rnC3o8qvf4JTcbe/ri/HOItQiunKsc1o4UAm
+Adnshs2igOkwnMAJQUtQAoACT0CBJTmIWCMBNAJkjCwPKQKyQKAYxAkC0JACzyEj
+ollIAoQYBnAaBuEQS8KMojkfSVZJNNtlWyRrAdJA2RLhHG6kKEBQOAFYgsUBjuNG
+nAcsxwNZWGCxKQq5OQ7aUIpokWvyxbDQ3n/w/3PfxQt2PE9CHgABMVqOJCmaJgmK
+MgqUFiGAUwSrgDYkmWERkmmbHUpSqQ2rSMLkYonII2WuSpB/Acm2lCILkqVWyWK3
+8BaT/FJgt1ttOkVpL7UqqANxhn9MDJxoFuQxyooSJNlEixnTETLJ20XFlaBpnKY1
+WkqThKE3raKEDKJCaLQ0I48IV/5BJUoYwkhzEJC5kNECEgccQREUzwIO5zWAYgkS
+4pyAM1BDQTkwI1OCYAQcpeFZBkBag2NKrjfMFkxHyn3CfCWRmG+G9mIJYRUhVWoy
+QOUXrIpdujwgPVd9Z7r+8Mya9qGOu6sXqFb2ThWyOPxu5erOcNXAcmfg5SVOR8P8
+aMaP+66sSn/k6MqhzpxJ+2va7oa1bX+NPTP+87nD129UVF2ubJ96ruTTrBXfb2E8
+rqhfDkpjvb4Nu+M23AvOJjxLHsnUbxttOp/M0TVBM6d3B035kkw5pomhPQm/BSWm
+4T+Bms9ugrAHdd7WC2fK/E0J8SFrdyyDWnOfwTgedyQtxlxY7X7/+Ci3pFJr+cOv
+OnFk3P8bc9/Uk5VwULexO7Pn7eHnL/w+c60v74bkbH3hUIBj3e39BVt9ab+GNVRe
+sq1p+Lys6cDEutmmpLqji77qjEgcDInY6857K9ZVs9ixamtjflRh88WL0Y7oeOts
+w4i6satDL80LKc5T/Sc6WtuK/kxF91nT9hx31Pr3tDO1PrVeHRnpLToXM73Dm5gj
+5CXXiS25Q71M96365kNxH7WPzD6aOJI+4Fv/w0FXxFX9bHUnnZd1vu96b1fApWvB
+2aYT8R86n8g63Ry9aSJsWao6u6Ys9LHcromB4VLPXNmxxtGuM++lvjzV48lw29KD
+Vk9HwS8zhyqcsUv3Nm2PBTPdD0Rn1/TzcZOFL4bEuFRzNwOvvDLpUi/qG1tRdeAh
+UF9Pj0WvLxwgjp06ud/b4vG8c/+tD173tD2OV+9zEdt9GRvdJ1/6NvtjfUt8sZ87
+cvC7TZk77e9668qfumf46Vcf9oZaz3Z/MrfNeeeLleq/AQ==
+=4JGL
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/starrys
+
+==================================================================
+
