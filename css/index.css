@@ -148,6 +148,7 @@ div.musicbox {
 }
 
 .navigation {
+    display: block;
 }
 
 .navigation-item a {
